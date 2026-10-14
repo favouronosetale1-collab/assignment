@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore France</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Explore France</h1>
+        <p>Discover the beauty, culture and history of France</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Attractions</a>
+        <a href="#">Book a Tour</a>
+    </nav>
+
+    <section id="home" class="intro">
+        <h2>Welcome to France</h2>
+
+        <img
+            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80"
+            alt="Paris city with the Eiffel Tower">
+
+        <p>
+            France is a country in Western Europe known for its beautiful
+            cities, rich history, art, fashion and delicious food.
+            Its capital city is Paris. France attracts millions of tourists
+            who visit its famous landmarks, museums, beaches and castles.
+        </p>
+    </section>
+
+    <!-- Tourist Attractions -->
+    <section id="attractions">
+        <h2>Five Tourist Attractions in France</h2>
+
+        <div class="attraction-container">
+
+            <div class="attraction">
+                <img
+                    src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&w=900&q=80"
+                    alt="Eiffel Tower in Paris">
+                <h3>1. Eiffel Tower</h3>
+                <p>
+                    The Eiffel Tower is one of the most famous landmarks
+                    in the world. It is located in Paris and offers
+                    beautiful views of the city.
+                </p>
+            </div>
+
+            <div class="attraction">
+                <img
+                    src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Svh_nL1-JeaularTgZrmPLJip3L-fg-0WQlpa3XUOWA1ZBcVLz4JjePJmQ1ov3FTZ7jNbdJwBOmtMri5pZPFKl8KiDyfJ3DgxJJf5aLCaCBkrOKqrGvo0l5kpq306jeWXVKqROtP6bGKu-=s1360-w1360-h1020-rw"
+                    alt="Louvre Museum in Paris">
+                <h3>2. Louvre Museum</h3>
+                <p>
+                    The Louvre is a famous art museum in Paris. It houses
+                    thousands of artworks, including the well-known
+                    Mona Lisa painting.
+                </p>
+            </div>
+
+            <div class="attraction">
+                <img
+                    src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=80"
+                    alt="Beautiful streets of Paris">
+                <h3>3. Notre-Dame Cathedral</h3>
+                <p>
+                    Notre-Dame is a historic cathedral in Paris known
+                    for its Gothic architecture and impressive design.
+                    It is an important French cultural landmark.
+                </p>
+            </div>
+
+            <div class="attraction">
+                <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                    alt="Scenic natural landscape">
+                <h3>4. French Riviera</h3>
+                <p>
+                    The French Riviera is a beautiful Mediterranean
+                    coastal region known for its beaches, sunny weather
+                    and attractive seaside towns.
+                </p>
+            </div>
+
+            <div class="attraction">
+                <img
+                    src="https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=900&q=80"
+                    alt="Historic French castle">
+                <h3>5. Palace of Versailles</h3>
+                <p>
+                    The Palace of Versailles is a grand historic palace
+                    near Paris. It is famous for its royal history,
+                    magnificent rooms and beautiful gardens.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section id="booking" class="booking">
+        <h2>Book a Tour of France</h2>
+        <p>Fill in the form below to plan your visit.</p>
+
+        <form action="#" method="get">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label for="attraction">Choose an Attraction:</label>
+            <select id="attraction" name="attraction" required>
+                <option value="">Select a place</option>
+                <option value="Eiffel Tower">Eiffel Tower</option>
+                <option value="Louvre Museum">Louvre Museum</option>
+                <option value="Notre-Dame Cathedral">Notre-Dame Cathedral</option>
+                <option value="French Riviera">French Riviera</option>
+                <option value="Palace of Versailles">Palace of Versailles</option>
+            </select>
+
+            <label for="date">Preferred Tour Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="visitors">Number of Visitors:</label>
+            <input type="number" id="visitors" name="visitors"
+                   min="1" max="50" value="1" required>
+
+            <button type="submit">Submit Booking</button>
+
+        </form>
+    </section>
+
+
+</body>
+</html>
